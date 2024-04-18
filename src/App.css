@@ -1,38 +1,115 @@
-.App {
+*{
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: rgb(255,255,241);
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h2{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: brown;
+}
+
+h3{
+  color: brown;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input{
+  border: 3px solid brown;
+  padding: 10px;
+  font-size: 18px;
+  /* border-radius: 20px; */
+}
+
+input:focus{
+  border: 0.5px solid brown;
+  outline: none;
+}
+
+.form-input{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 500px;
+}
+
+.recipes{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  color: brown;
+}
+
+.card{
+  width: 320px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow properties */
+  transition: 0.3s;
+}
+
+.card-image{
+  width: 100%;
+}
+
+.card-body{
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category{
+  color: rgb(169,107,30);
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a{
+  background-color: rgb(169,107,30);
+  color: blanchedalmond;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+  h2{
+    font-size: 30px;
+    font-weight: 700;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h3{
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .form-input{
+    width: 200px;
   }
 }
